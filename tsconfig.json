@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",//编译为es5给浏览器使用
+    "lib": [ //所需编译进来的库文件
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "noImplicitAny": false,
+    "allowJs": true,  //混合编译js文件
+    "skipLibCheck": true,
+    "esModuleInterop": true, //允许使用commonJs的方法import 默认文件
+    "allowSyntheticDefaultImports": true, 
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",//es6的esnext
+    "moduleResolution": "node",//决定我们编译器的工作方式
+    "resolveJsonModule": true,
+    "isolatedModules": true, //编译器将文件作为单独的模块来使用
+    "noEmit": true,  //编译错误，不会生成js代码
+    "jsx": "react-jsx"  //允许编译react代码
+  },
+  "include": [
+    "src"
+  ]
+}
